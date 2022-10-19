@@ -4,93 +4,220 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/styles.css" />
+		<!-- css propio -->
+		<link rel="stylesheet" href="/css/stylesTransitionToBoostrap.css" />
+		<!-- imports google -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- import iconografia mdi -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"
 		/>
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-		<meta name="msapplication-TileColor" content="#da532c" />
-		<meta name="theme-color" content="#ffffff" />
-		<link rel="icon" type="image/x-icon" href="../favico/favicon.ico" />
-		<title>La Cafeteria - Carta</title>
+		<!-- favico -->
+		<link rel="icon" type="image/x-icon" href="/favico/favicon.ico" />
+		<!-- Boostrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+		<title>La Cafeteria - Nosotros</title>
 	</head>
-	<body>
-		<header class="header">
-			<div class="headerlogo">
-				<a class="header__a" href="index.html">
-					<span class="mdi mdi-coffee" style="font-size: 70px"></span>
-					<span class="titulo">La Cafeteria</span>
-				</a>
-			</div>
-			<nav class="navtext">
-				<ul>
-					<li>
-						<a href="../index.html">Nosotros</a>
-					</li>
-					<li class="nav__li-active nohover">
-						<a href="./carta.html">Carta</a>
-					</li>
-					<li>
-						<a href="./cafeEspecialidad.html">Cafe de especialidad</a>
-					</li>
-					<li><a href="./franquicias.html">Franquicias</a></li>
-					<li><a href="./contacto.html">Contacto</a></li>
-				</ul>
+	<body class="d-flex flex-column h-100">
+		<header>
+			<nav class="navbar sticky-top navbar-expand-lg background-p">
+				<div class="container-fluid">
+					<a class="navbar-brand background-pl px-3" href="/index.html">
+						<i
+							src="/docs/5.2/assets/brand/bootstrap-logo.svg"
+							alt="Logo"
+							style="font-size: 32px"
+							class="d-inline-block align-text-middle mdi mdi-coffee"
+						></i>
+						La Cafeteria
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div
+						class="collapse navbar-collapse mt-2"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mb-2 mb-lg-0">
+							<li class="nav-item px-2">
+								<a class="nav-link" aria-current="page" href="../index.html"
+									>Nosotros</a
+								>
+							</li>
+							<li class="nav-item px-2">
+								<a class="nav-link active" href="/pages/carta.html">Carta</a>
+							</li>
+							<li class="nav-item px-2">
+								<a class="nav-link" href="/pages/cafeEspecialidad.html"
+									>Cafe de especialidad</a
+								>
+							</li>
+							<li class="nav-item px-2">
+								<a class="nav-link" href="/pages/franquicias.html"
+									>Franquicias</a
+								>
+							</li>
+							<li class="nav-item px-2">
+								<a class="nav-link" href="/pages/contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
-		<footer class="footer">
-			<div class="footerBox navtext center">
-				<a href="tel:+54 9 2235831643" class="navtext">
-					<span class="mdi mdi-whatsapp" style="font-size: 32px"></span>
-					+54 9 2235831643
-				</a>
-				<a href="mailto:facundosalasu19@gmail.com" class="navtext">
-					<span class="mdi mdi-email" style="font-size: 32px"></span>
-					LaCafeteria@CoffeLovers.Com
-				</a>
-				<a href="https://www.instagram.com/" class="navtext">
-					<span class="mdi mdi-instagram" style="font-size: 32px"> </span>
-					@LaCafteriaOk</a
-				>
-				<a href="https://twitter.com/" class="navtext">
-					<span class="mdi mdi-twitter" style="font-size: 32px"> </span>
-					LaCafeteria</a
-				>
+		<main class="main my-5">
+			<div class="container-fluid">
+				<article>
+					<h1 class="fs-1 text-center align-middle">Carta</h1>
+					<hr />
+					<div class="row">
+						<div
+							class="col-12 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center text-center"
+						>
+							<div class="card">
+								<img src="/img/carta1.jpg" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-title">Desayuno completo</h5>
+									<p class="card-text">
+										Incluye infusion con cafe a eleccion, tostadas , manteca ,
+										dulce de leche, comida salada y dulce a eleccion hasta 2
+										platos.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-12 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center text-center"
+						>
+							<div class="card">
+								<img src="/img/carta2.jpg" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-title">Brunch</h5>
+									<p class="card-text">
+										Incluye infusion con cafe a eleccion, Platos gourmette
+										variedades dulces y saladas libres, ideal para compartir.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-12 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center text-center"
+						>
+							<div class="card">
+								<img src="/img/carta3.jpg" class="card-img-top" />
+								<div class="card-body">
+									<h5 class="card-title">Merienda del bosque</h5>
+									<p class="card-text">
+										Incluye infusion con cafe a eleccion, Variedades dulces con
+										frutos estacionales e importados de europa y asia.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr />
+				</article>
 			</div>
-			<div class="footerBoxHours">
-				<p class="navtext centerItem">Horarios</p>
-				<p class="texto">Lunes: 08 - 14 * 15 - 22</p>
-				<p class="texto">Martes: 08 - 14 * 15 - 22</p>
-				<p class="texto">Miercoles: 08 - 14 * 15 - 22</p>
-				<p class="texto">Jueves: 08 - 14 * 15 - 22</p>
-				<p class="texto">Viernes: 08 - 14 * 15 - 22</p>
-				<p class="texto">Sabado: 08 - 14 * 15 - 02</p>
-				<p class="texto">Domingo: 08 - 14</p>
-			</div>
-			<div class="footerBox navtext">
-				<p class="navtext centerItem">Ubicacion</p>
-				<p class="navtext centerItem">Av.Olmos 1533 segundo piso</p>
-				<iframe
-					class="centerItem"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.926927327332!2d-64.17493499999999!3d-31.416139299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2992ebe57bb%3A0xda6fc09a19c2a0bc!2sAv.%20Emilio%20Olmos%201533%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1664170916099!5m2!1ses!2sar"
-					width="80%"
-					height="450"
-					style="border: 0; margin: 10px"
-					allowfullscreen=""
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"
-				></iframe>
+		</main>
+		<footer class="footer mt-auto py-3 background-p">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<p class="fs-4 text-center fw-bold mb-3">Redes Sociales</p>
+						<ul>
+							<li class="mb-3">
+								<a href="tel:+54 9 2235831643"
+									><span
+										class="mdi mdi-whatsapp px-2"
+										style="font-size: 32px"
+									></span
+									>+54 9 2235831643</a
+								>
+							</li>
+							<li class="mb-3">
+								<a href="mailto:facundosalasu19@gmail.com"
+									><span
+										class="mdi mdi-email px-2"
+										style="font-size: 32px"
+									></span
+									>LaCafeteria@CoffeLovers.Com</a
+								>
+							</li>
+							<li class="mb-3">
+								<a href="https://www.instagram.com/"
+									><span
+										class="mdi mdi-instagram px-2"
+										style="font-size: 32px"
+									></span
+									>@LaCafteriaOk</a
+								>
+							</li>
+							<li class="mb-3">
+								<a href="https://twitter.com/"
+									><span
+										class="mdi mdi-twitter px-2"
+										style="font-size: 32px"
+									></span
+									>LaCafeteria</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center">
+						<p class="fs-4 text-center fw-bold mb-3">Horarios</p>
+						<ul class="text-center">
+							<li class="mb-3">Lunes: 08 - 14 * 15 - 22</li>
+							<li class="mb-3">Martes: 08 - 14 * 15 - 22</li>
+							<li class="mb-3">Miercoles: 08 - 14 * 15 - 22</li>
+							<li class="mb-3">Jueves: 08 - 14 * 15 - 22</li>
+							<li class="mb-3">Viernes: 08 - 14 * 15 - 22</li>
+							<li class="mb-3">Sabado: 08 - 14 * 15 - 02</li>
+							<li>Domingo: 08 - 14</li>
+						</ul>
+					</div>
+					<div class="col-12 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<p class="fs-4 text-center fw-bold mb-3">Ubicacion</p>
+						<p class="fs-6 text-center mb-3">
+							Av.Emilio Olmos 1533 segundo piso
+						</p>
+						<div class="d-flex justify-content-center align-items-center">
+							<iframe
+								class="centerItem"
+								width="360px"
+								height="240px"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.926927327332!2d-64.17493499999999!3d-31.416139299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2992ebe57bb%3A0xda6fc09a19c2a0bc!2sAv.%20Emilio%20Olmos%201533%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1664170916099!5m2!1ses!2sar"
+								style="border: 0; margin: 10px"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"
+							></iframe>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
 	</body>
