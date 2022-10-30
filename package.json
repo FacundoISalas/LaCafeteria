@@ -1,0 +1,30 @@
+{
+  "name": "lacafeteria",
+  "version": "1.0.0",
+  "description": "Proyecto front-end la cafeteria.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/stylesScss.scss css/styles.css css/stylesTransitionToBoostrap.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacundoISalas/LaCafeteria.git"
+  },
+  "keywords": [
+    "lacafeteria",
+    "proyecto",
+    "frontend"
+  ],
+  "author": "FacundoSalas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacundoISalas/LaCafeteria/issues"
+  },
+  "homepage": "https://github.com/FacundoISalas/LaCafeteria#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
