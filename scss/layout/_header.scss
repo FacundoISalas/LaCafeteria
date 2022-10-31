@@ -1,0 +1,32 @@
+header {
+	nav {
+		ul {
+			li.nav-item {
+				@include backgroundColor($primary-light);
+				border: solid $secondary;
+				border-radius: 20px;
+				margin-left: 10px;
+				margin-right: 20px;
+				a {
+					&:hover {
+						color: $navbackgroundcolor;
+						transform: scale(1.2);
+					}
+				}
+				&:has(.nav-link.active) {
+					transform: scale(1.2);
+					border: solid $primary;
+					a {
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+	}
+}
+.background-p {
+	@include backgroundColor($primary-light);
+}
+.background-pl {
+	@include backgroundColor($primary);
+}

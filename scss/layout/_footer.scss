@@ -1,0 +1,18 @@
+footer.footerCustom {
+	ul.links {
+		li {
+			color: $secondary !important;
+			&:hover {
+				color: $navbackgroundcolor !important;
+				transform: scale(1.2);
+				a {
+					color: $navbackgroundcolor !important;
+				}
+			}
+			a {
+				text-decoration: none !important;
+				color: $secondary !important;
+			}
+		}
+	}
+}

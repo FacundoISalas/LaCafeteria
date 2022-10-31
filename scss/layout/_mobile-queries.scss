@@ -1,0 +1,75 @@
+// tablet horizontal
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	header {
+		nav {
+			ul {
+				li.nav-item {
+					margin-top: 5px;
+					margin-bottom: 5px;
+					a {
+						&:hover {
+							color: $navbackgroundcolor;
+							transform: scale(1.2);
+							transform-origin: bottom left;
+						}
+					}
+					&:has(.nav-link.active) {
+						transform: scale(1);
+						text-align: center;
+						border: solid $primary;
+					}
+				}
+			}
+		}
+	}
+}
+// tablet
+@media all and (min-width: 480px) and (max-width: 768px) {
+	header {
+		nav {
+			ul {
+				li.nav-item {
+					margin-top: 5px;
+					margin-bottom: 5px;
+					a {
+						&:hover {
+							color: $navbackgroundcolor;
+							transform: scale(1.2);
+							transform-origin: bottom left;
+						}
+					}
+					&:has(.nav-link.active) {
+						transform: scale(1);
+						text-align: center;
+						border: solid $primary;
+					}
+				}
+			}
+		}
+	}
+}
+// mobile y dispositivos mas pequeños
+@media all and (max-width: 480px) {
+	header {
+		nav {
+			ul {
+				li.nav-item {
+					margin-top: 5px;
+					margin-bottom: 5px;
+					a {
+						&:hover {
+							color: $navbackgroundcolor;
+							transform: scale(1.2);
+							transform-origin: bottom left;
+						}
+					}
+					&:has(.nav-link.active) {
+						transform: scale(1);
+						text-align: center;
+						border: solid $primary;
+					}
+				}
+			}
+		}
+	}
+}
