@@ -1,4 +1,3 @@
-// tablet horizontal
 @media all and (min-width: 768px) and (max-width: 1024px) {
 	header {
 		nav {
@@ -18,6 +17,26 @@
 						text-align: center;
 						border: solid $primary;
 					}
+				}
+			}
+		}
+	}
+	.card-img-top {
+		width: 100%;
+		height: 50vw !important;
+		object-fit: cover;
+	}
+	body,
+	html {
+		overflow-x: hidden !important;
+	}
+	footer.footerCustom {
+		ul.links {
+			li {
+				text-align: center !important;
+				&:hover {
+					transform: scale(1.2);
+					transform-origin: bottom right;
 				}
 			}
 		}
@@ -47,6 +66,26 @@
 			}
 		}
 	}
+	.card-img-top {
+		width: 100%;
+		height: 60vh;
+		object-fit: cover;
+	}
+	body,
+	html {
+		overflow-x: hidden !important;
+	}
+	footer.footerCustom {
+		ul.links {
+			li {
+				text-align: center !important;
+				&:hover {
+					transform: scale(1.2);
+					transform-origin: bottom right;
+				}
+			}
+		}
+	}
 }
 // mobile y dispositivos mas pequeños
 @media all and (max-width: 480px) {
@@ -68,6 +107,26 @@
 						text-align: center;
 						border: solid $primary;
 					}
+				}
+			}
+		}
+	}
+	.card-img-top {
+		width: 100%;
+		height: 60vh;
+		object-fit: fill;
+	}
+	body,
+	html {
+		overflow-x: hidden !important;
+	}
+	footer.footerCustom {
+		ul.links {
+			li {
+				text-align: center !important;
+				&:hover {
+					transform: scale(1.2);
+					transform-origin: bottom right;
 				}
 			}
 		}

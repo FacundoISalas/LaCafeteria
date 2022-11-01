@@ -8,7 +8,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; }
+  overflow-x: hidden !important; }
 
 /* .primary {
 	color: #8d6e63;
@@ -99,7 +99,19 @@ footer.footerCustom ul.links li {
     header nav ul li.nav-item:has(.nav-link.active) {
       transform: scale(1);
       text-align: center;
-      border: solid #8d6e63; } }
+      border: solid #8d6e63; }
+  .card-img-top {
+    width: 100%;
+    height: 50vw !important;
+    object-fit: cover; }
+  body,
+  html {
+    overflow-x: hidden !important; }
+  footer.footerCustom ul.links li {
+    text-align: center !important; }
+    footer.footerCustom ul.links li:hover {
+      transform: scale(1.2);
+      transform-origin: bottom right; } }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
   header nav ul li.nav-item {
@@ -112,7 +124,19 @@ footer.footerCustom ul.links li {
     header nav ul li.nav-item:has(.nav-link.active) {
       transform: scale(1);
       text-align: center;
-      border: solid #8d6e63; } }
+      border: solid #8d6e63; }
+  .card-img-top {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover; }
+  body,
+  html {
+    overflow-x: hidden !important; }
+  footer.footerCustom ul.links li {
+    text-align: center !important; }
+    footer.footerCustom ul.links li:hover {
+      transform: scale(1.2);
+      transform-origin: bottom right; } }
 
 @media all and (max-width: 480px) {
   header nav ul li.nav-item {
@@ -125,4 +149,43 @@ footer.footerCustom ul.links li {
     header nav ul li.nav-item:has(.nav-link.active) {
       transform: scale(1);
       text-align: center;
-      border: solid #8d6e63; } }
+      border: solid #8d6e63; }
+  .card-img-top {
+    width: 100%;
+    height: 60vh;
+    object-fit: fill; }
+  body,
+  html {
+    overflow-x: hidden !important; }
+  footer.footerCustom ul.links li {
+    text-align: center !important; }
+    footer.footerCustom ul.links li:hover {
+      transform: scale(1.2);
+      transform-origin: bottom right; } }
+
+.card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 15px; }
+
+.customButton {
+  color: #212121;
+  background-color: #be9c91;
+  font-size: 16px !important;
+  font-family: "Roboto", sans-serif !important;
+  width: 160px;
+  height: 40px;
+  border: solid #212121 !important;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .customButton:hover {
+    transform: scale(1.2);
+    background-color: white; }

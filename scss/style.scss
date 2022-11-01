@@ -4,4 +4,30 @@
 @import './base/_typos.scss';
 @import './layout/header.scss';
 @import './layout/footer.scss';
-@import './layout/mobile-queries'
+@import './layout/mobile-queries.scss';
+@import './components/main-card.scss';
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-column-gap: 30px;
+	grid-row-gap: 15px;
+}
+
+.customButton {
+	color: $secondary;
+	background-color: $primary-light;
+	font-size: $regularTextSize !important;
+	font-family: $roboto !important;
+	width: 160px;
+	height: 40px;
+	border: solid $secondary !important;
+	border-radius: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	&:hover {
+		transform: scale(1.2);
+		background-color: $navbackgroundcolor;
+	}
+}
