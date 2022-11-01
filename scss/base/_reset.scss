@@ -1,13 +1,15 @@
-* {
+.claseBaseDemoExtend {
 	margin: 0;
 	padding: 0;
+}
+* {
+	@extend .claseBaseDemoExtend;
 	box-sizing: border-box;
 }
 // custom-body-setup
 body {
 	width: 100%;
 	height: 100%;
-	margin: 0px;
-	padding: 0px;
+	@extend .claseBaseDemoExtend;
 	overflow-x: hidden !important;
 }

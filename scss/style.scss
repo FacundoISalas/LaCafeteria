@@ -7,14 +7,6 @@
 @import './layout/mobile-queries.scss';
 @import './components/main-card.scss';
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(1, 1fr);
-	grid-column-gap: 30px;
-	grid-row-gap: 15px;
-}
-
 .customButton {
 	color: $secondary;
 	background-color: $primary-light;
